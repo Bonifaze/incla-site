@@ -17,8 +17,8 @@ const Footer = () => {
                         className='flex items-center 2xl:w-36'
                     />
                     <div className='flex flex-col gap-2'>
-                        <Link href={'https://www.info@aicla.org.ng'}>
-                            <p>info@aicla.org.ng</p>
+                        <Link href={'https://www.info@incla.edu.ng'}>
+                            <p>info@incla.edu.ng</p>
                         </Link>
                         <Link href={'tel:+2348064758374'}>
                             <p>(234)- 80 6475 8374</p>
@@ -102,8 +102,8 @@ const Footer = () => {
                     <Link href={'tel:+2348064758374'}>
                         <p>Phone: 080 6475 8374</p>
                     </Link>
-                    <Link href={'https://www.info@aicla.org.ng'}>
-                        <p>Email: info@aicla.org.ng</p>
+                    <Link href={'https://www.info@incla.edu.ng'}>
+                        <p>Email: info@incla.edu.ng</p>
                     </Link>
                 </div>
               {/*

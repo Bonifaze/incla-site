@@ -15,7 +15,7 @@ export default function Contact () {
                         }} 
                     > 
                         <p className="font-semibold">Email</p>
-                        <Link href={'mailto:info@incla.org.ng'}>info@incla.org.ng</Link>
+                        <Link href={'mailto:info@incla.edu.ng'}>info@incla.edu.ng</Link>
                     </div>
                     <div className="bg-white p-2 lg:p-10 mt-10 rounded-lg flex flex-col"
                         style={{

@@ -109,7 +109,7 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link href={"apply"} className="w-full h-full m-3 hover:bg-incla-purple hover:text-white rounded-md px-4 py-1">
+                        <Link href="https://portal.incla.edu.ng/admissions/login" className="w-full h-full m-3 hover:bg-incla-purple hover:text-white rounded-md px-4 py-1">
                           Apply Now
                         </Link>
                       </li>

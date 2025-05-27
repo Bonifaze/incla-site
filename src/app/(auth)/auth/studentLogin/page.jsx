@@ -52,7 +52,7 @@ export default function StudentLogin () {
                 </div>
                 <div className="flex h-screen justify-center items-center">
                     <div className="bg-white flex flex-col mt-20 md:mt-0 p-5 md:p-10 pb-20 rounded-lg w-fit h-fit text-center">
-                        <h1 className="text-2xl xl:text-3xl 2xl:text-4xl font-bold">AICLA</h1>
+                        <h1 className="text-2xl xl:text-3xl 2xl:text-4xl font-bold">InCLA</h1>
                         <p className="my-5 font-semibold">Student Login</p>
                         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                             <div className="relative flex w-full h-full bg-[#96d6f2] p-3 rounded-lg gap-2">
