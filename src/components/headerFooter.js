@@ -14,7 +14,7 @@ const HeaderFooterToggle = ({ children }) => {
     console.log(pathname)
   }, [pathname]);
 
-  const hideHeaderFooterRoutes = ['/auth/login', '/userLogin', '/recovery', '/auth/instituteLogin', '/auth/lecturerLogin', '/auth/studentLogin'];
+  const hideHeaderFooterRoutes = ['/userLogin', '/recovery'];
 
   const isHidden = hideHeaderFooterRoutes.includes(currentPath);
 
