@@ -2,12 +2,12 @@ import Link from "next/link"
 
 export default function Contact () {
     return (
-        <div className="bg-incla-grey-200 pb-10">
+        <div className="bg-InCLA-grey-200 pb-10">
             <div className="bg-slide2 h-[170px] md:h-[300px] lg:h-[400px] max-h-[800px] bg-[#66165a]/55 bg-blend-overlay w-full bg-center bg-no-repeat bg-cover text-xl md:text-2xl lg:text-4xl font-bold text-white 2xl:text-6xl flex flex-col items-center justify-center gap-0">
                 <h1>Contact Us</h1><br />  
             </div> 
             <div className="max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl mx-auto flex flex-col lg:grid lg:grid-cols-2 lg:p-20 gap-16 lg:gap-32">                
-                <div className="gap-5 bg-incla-blue lg:bg-transparent p-7 py-16 lg:p-0">
+                <div className="gap-5 bg-InCLA-blue lg:bg-transparent p-7 py-16 lg:p-0">
                     <h1 className="text-white lg:text-black text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">Drop us a note and we’ll get back to you, or use the details below to get in touch</h1>
                     <div className="bg-white p-2 lg:p-10 my-10 rounded-lg flex flex-col"
                         style={{
@@ -15,7 +15,7 @@ export default function Contact () {
                         }} 
                     > 
                         <p className="font-semibold">Email</p>
-                        <Link href={'mailto:info@incla.edu.ng'}>info@incla.edu.ng</Link>
+                        <Link href={'mailto:info@InCLA.edu.ng'}>info@InCLA.edu.ng</Link>
                     </div>
                     <div className="bg-white p-2 lg:p-10 mt-10 rounded-lg flex flex-col"
                         style={{
@@ -53,7 +53,7 @@ export default function Contact () {
                             }} 
                         ></textarea>
 
-                        <button type="submit" id='submit' className="w-fit bg-incla-purple p-2 px-4 text-white rounded-lg">
+                        <button type="submit" id='submit' className="w-fit bg-InCLA-purple p-2 px-4 text-white rounded-lg">
                             Send a message
                         </button>
                     </form>

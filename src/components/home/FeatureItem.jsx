@@ -6,7 +6,7 @@ const FeatureItem = ({ title, content, Icon, className }) => {
       style={{
         boxShadow: "0px 4px 4px 0px #00000040",
       }}
-      className={`flex-1 h-64 md:h-full ${className} bg-incla-purple rounded-lg flex flex-col py-10 items-center justify-between gap-5`}
+      className={`flex-1 h-64 md:h-full ${className} bg-InCLA-purple rounded-lg flex flex-col py-10 items-center justify-between gap-5`}
     >
       <Icon />
       <div className="flex flex-col gap-2.5 items-center px-9 md:max-lg:px-3 lg:px-5 mb-5">

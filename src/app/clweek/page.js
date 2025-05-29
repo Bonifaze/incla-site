@@ -4,7 +4,7 @@ export default function clweek () {
             <div className="bg-hallway h-[170px] md:h-[300px] lg:h-[400px] max-h-[800px] bg-[#66165a]/55 bg-blend-overlay w-full bg-center bg-no-repeat bg-cover text-lg md:text-2xl lg:text-4xl font-bold text-white 2xl:text-6xl flex items-center justify-center">
                 <h1>Consecrated Life Week</h1>  
             </div> 
-            <div className="w-full h-fit p-5 md:p-10 bg-incla-grey-200 flex justify-center">
+            <div className="w-full h-fit p-5 md:p-10 bg-InCLA-grey-200 flex justify-center">
                 <div
                     style={{
                         boxShadow: "0px 4px 4px 0px #00000040",

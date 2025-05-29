@@ -6,7 +6,7 @@ const Testimonials = () =>{
     return(
         <div className='bg-[#f2f2f2] p-10 md:p-20'>
             <div className='max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl mx-auto'>
-                <h2 className='text-xl lg:text-3xl text-incla-purple text-center font-semibold 2xl:text-5xl'>TESTIMONIALS</h2>
+                <h2 className='text-xl lg:text-3xl text-InCLA-purple text-center font-semibold 2xl:text-5xl'>TESTIMONIALS</h2>
                 <div className='flex flex-col lg:grid xl:grid-cols-3 lg:max-xl:grid-cols-2 gap-7 my-20'>
                     {testimonialItem.map((value, index) => (
                         <div 

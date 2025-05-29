@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ['localhost'],
+    unoptimized: true
+  },
+  output: 'standalone',
+  reactStrictMode: true
+};
 
 export default nextConfig;
 

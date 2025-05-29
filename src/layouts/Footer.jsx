@@ -17,8 +17,8 @@ const Footer = () => {
                         className='flex items-center 2xl:w-36'
                     />
                     <div className='flex flex-col gap-2'>
-                        <Link href={'https://www.info@incla.edu.ng'}>
-                            <p>info@incla.edu.ng</p>
+                        <Link href={'https://www.info@InCLA.edu.ng'}>
+                            <p>info@InCLA.edu.ng</p>
                         </Link>
                         <Link href={'tel:+2348064758374'}>
                             <p>(234)- 80 6475 8374</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                                 <Image
                                     width={30}
                                     height={30}
-                                    alt="incla-facebook"
+                                    alt="InCLA-facebook"
                                     src="/image/social-icons/Facebook.png"
                                     className="2xl:w-12 lg:w-8 md:max-lg:w-7 xl:w-6"
                                 />
@@ -49,7 +49,7 @@ const Footer = () => {
                                 <Image
                                     width={30}
                                     height={30}
-                                    alt="incla-instagram"
+                                    alt="InCLA-instagram"
                                     src="/image/social-icons/Instagram.png"
                                     className="2xl:w-12 lg:w-8 md:max-lg:w-7 xl:w-6"
                                 />
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <Image
                                     width={30}
                                     height={30}
-                                    alt="incla-twitterX"
+                                    alt="InCLA-twitterX"
                                     src="/image/social-icons/TwitterX.png"
                                     className="2xl:w-12 lg:w-8 md:max-lg:w-7 xl:w-6"
                                 />
@@ -75,7 +75,7 @@ const Footer = () => {
                                 <Image
                                     width={30}
                                     height={30}
-                                    alt="incla-Linkedin"
+                                    alt="InCLA-Linkedin"
                                     src="/image/social-icons/LinkedIn.png"
                                     className="2xl:w-12 lg:w-8 md:max-lg:w-7 xl:w-6"
                                 />
@@ -98,12 +98,12 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col text-sm w-full gap:3 md:gap-5 2xl:gap-10 2xl:text-lg 2xl:leading-none xl:text-base md:max-xl:mt-20 font-light'>
                     <h1 className='font-normal 2xl:text-2xl'>CONTACT</h1>
-                    <p>INCLA, Bwari Area Council, FCT, Abuja</p>
+                    <p>InCLA, Bwari Area Council, FCT, Abuja</p>
                     <Link href={'tel:+2348064758374'}>
                         <p>Phone: 080 6475 8374</p>
                     </Link>
-                    <Link href={'https://www.info@incla.edu.ng'}>
-                        <p>Email: info@incla.edu.ng</p>
+                    <Link href={'https://www.info@InCLA.edu.ng'}>
+                        <p>Email: info@InCLA.edu.ng</p>
                     </Link>
                 </div>
               {/*

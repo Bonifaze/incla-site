@@ -1,0 +1,110 @@
+InCLA SITE DOCUMENTATION
+=======================
+
+Project Structure
+----------------
+The project is built using Next.js and follows a modern web application architecture.
+
+Root Directory Structure:
+- .next/ - Next.js build output
+- node_modules/ - Project dependencies
+- public/ - Static assets
+- src/ - Source code
+- package.json - Project configuration and dependencies
+- next.config.mjs - Next.js configuration
+- tailwind.config.mjs - Tailwind CSS configuration
+- postcss.config.mjs - PostCSS configuration
+- eslint.config.mjs - ESLint configuration
+- server.js - Custom server configuration
+
+Source Code Structure (src/)
+---------------------------
+1. app/ - Main application pages and routing
+2. components/ - Reusable UI components
+3. layouts/ - Layout components
+4. data/ - Data management and storage
+
+Pages (src/app/)
+---------------
+1. Home Page (/)
+   - Main landing page
+   - File: page.js
+
+2. User Authentication
+   - /userLogin - User login page
+
+3. Academic Programs
+   - /academicPro - Academic programs overview
+   - /diploma - Diploma programs
+   - /certificate - Certificate programs
+   - /lMasters - Masters programs
+
+4. Admissions
+   - /apply - Application process
+   - /admissionReq - Admission requirements
+   - /admissionList - Admission list/status
+
+5. Events and Activities
+   - /clweek - Class week information
+   - /retreat - Retreat information
+   - /recovery - Recovery programs
+
+6. Information
+   - /about - About the institution
+   - /news - News and updates
+   - /contact - Contact information
+
+Components (src/components/)
+--------------------------
+1. Layout Components
+   - headerFooter.js - Main header and footer component
+
+2. Feature Components
+   - button/ - Button components
+   - home/ - Home page specific components
+   - icon/ - Icon components
+   - pagination/ - Pagination components
+
+Configuration Files
+-----------------
+1. next.config.mjs
+   - Next.js configuration
+   - Custom server settings
+   - Environment variables
+
+2. tailwind.config.mjs
+   - Tailwind CSS configuration
+   - Theme customization
+   - Plugin configuration
+
+3. postcss.config.mjs
+   - PostCSS configuration
+   - CSS processing pipeline
+
+4. eslint.config.mjs
+   - ESLint configuration
+   - Code style rules
+   - Linting rules
+
+5. jsconfig.json
+   - JavaScript configuration
+   - Path aliases
+   - Compiler options
+
+Server Configuration
+------------------
+server.js
+- Custom server implementation
+- Port configuration
+- Server middleware
+
+Dependencies
+-----------
+Key dependencies from package.json:
+- Next.js - React framework
+- React - UI library
+- Tailwind CSS - Utility-first CSS framework
+- ESLint - Code linting
+- PostCSS - CSS processing
+
+Note: This documentation provides an overview of the project structure and main components. For detailed implementation specifics, refer to the individual component and page files. 

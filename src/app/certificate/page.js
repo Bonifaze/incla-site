@@ -13,7 +13,7 @@ export default function Certificate () {
                     >
                         <h1 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold lg:text-center mb-2">Certificate Courses</h1>
                         <p className="max-sm:text-[14px]">
-                        <p>INCLA offers the possibility of doing short term courses either in the Diploma or PG stream of studies. To secure certificate for the short term courses attended, they need to go through the process of evaluation conducted at the end of the courses and the marks will be registered. There is also the possibility to audit courses for short term period. Such students will not be given certificates.
+                        <p>InCLA offers the possibility of doing short term courses either in the Diploma or PG stream of studies. To secure certificate for the short term courses attended, they need to go through the process of evaluation conducted at the end of the courses and the marks will be registered. There is also the possibility to audit courses for short term period. Such students will not be given certificates.
                         </p><br />
                         <p>1. To be admitted to the certificate course in the theology of consecrated Life the student should have completed the pre–University or its equivalent, have basic catechetical and theological formation, and adequate knowledge of English.</p><br />
                         <p>2. The students who do not fulfill the entire academic requirement for obtaining the diploma are considered certificate students. They may attend the whole one year diploma programme or part of it. On the day of Convocation at the end of the academic year they get the certificate and mark the list for the courses and other curricular activities which they have successfully completed in the course of the year.</p><br />
@@ -26,7 +26,7 @@ export default function Certificate () {
                     >
                         <h1 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold lg:text-center mb-2">Some course Highlights for Certificate Courses</h1>
                         <ul className="list-disc list-inside">
-                            <p>INCLA offers the possibility of doing short term courses either in the Diploma or PG stream of studies. To secure certificate for the short term courses attended, they need to go through the process of evaluation conducted at the end of the courses and the marks will be registered. There is also the possibility to audit courses for short term period. Such students will not be given certificates.
+                            <p>InCLA offers the possibility of doing short term courses either in the Diploma or PG stream of studies. To secure certificate for the short term courses attended, they need to go through the process of evaluation conducted at the end of the courses and the marks will be registered. There is also the possibility to audit courses for short term period. Such students will not be given certificates.
                             </p>
                             <li>Introduction to Leadership</li>
                             <li>Emotional intelligence, conflict and self management.</li>

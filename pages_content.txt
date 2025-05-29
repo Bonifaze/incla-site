@@ -1,0 +1,96 @@
+InCLA SITE PAGES CONTENT
+=======================
+
+1. HOME PAGE (/)
+---------------
+The home page features:
+- Hero section
+- Features List
+- Home About section
+- Home Contact section
+
+2. ABOUT PAGE (/about)
+---------------------
+Content includes:
+- About section with description of InCLA
+- History section detailing the institute's background
+- Vision statement
+- Mission statement with 5 key points:
+  1. Preparing consecrated persons with identity and mission in African context
+  2. Systematic teaching of consecrated life history
+  3. Scientific investigation and publications
+  4. Equipping persons with teaching and training skills
+  5. Providing lay faithful with ministry competence
+- Local Administration section
+
+3. ACADEMIC PROGRAMS (/academicPro)
+---------------------------------
+Features:
+- Overview of all academic programs
+- Detailed program listings
+- Program descriptions and requirements
+
+4. DIPLOMA PROGRAMS (/diploma)
+----------------------------
+Requirements for diploma:
+1. Successful completion of one year curriculum
+2. Book reviews (minimum 800 pages)
+3. Research paper or subject summaries
+
+5. CERTIFICATE COURSES (/certificate)
+-----------------------------------
+- Certificate program overview
+- Course requirements
+- Program structure
+
+6. LICENTIATE/MASTERS (/lMasters)
+--------------------------------
+Requirements for Masters:
+1. Complete biennial curriculum
+2. Complete 13 fundamental courses (56 credits)
+3. Complete 5 optional courses (10 credits) and 2 seminars (6 credits)
+4. Submit thesis (15 credits)
+5. Pass comprehensive examination
+
+Course Categories:
+- Biblical Studies
+- Moral Theology
+- Pastoral Theology
+- Electives
+- Master's Thesis
+
+7. NEWS AND EVENTS (/news)
+-------------------------
+- Latest updates section
+- News articles
+- Event announcements
+- Pagination system for content
+
+8. USER LOGIN (/userLogin)
+-------------------------
+Features:
+- Direct links to external portals:
+  * Lecturer Portal
+  * Student Portal
+  * Admin Portal
+- No authentication required, direct redirection to respective portals
+
+9. CONSECRATED LIFE WEEK (/clweek)
+---------------------------------
+Content:
+- National seminar information
+- Theme-based discussions
+- Student reflection papers
+- Resource person presentations
+
+10. ADMISSION LIST (/admissionList)
+--------------------------------
+- Currently under development
+- Will display admission status and lists
+
+11. APPLY NOW (/apply)
+---------------------
+- Currently under development
+- Will contain application process and forms
+
+Note: This content is based on the current state of the codebase. Some pages are marked as "under development" and may be updated in future versions. 
