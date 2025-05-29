@@ -1,4 +1,4 @@
-INCLA SITE PAGES CONTENT
+InCLA SITE PAGES CONTENT
 =======================
 
 1. HOME PAGE (/)
@@ -12,7 +12,7 @@ The home page features:
 2. ABOUT PAGE (/about)
 ---------------------
 Content includes:
-- About section with description of INCLA
+- About section with description of InCLA
 - History section detailing the institute's background
 - Vision statement
 - Mission statement with 5 key points:

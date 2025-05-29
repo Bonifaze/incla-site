@@ -16,14 +16,14 @@ const UserLogin = () => {
               src={'/image/logo2.png'}
               className="max-md:w-12 max-md:h-12 lg:h-[80px] lg:w-[80px] rounded-full"
             />
-            <h1 className="text-4xl lg:text-5xl mt-10 lg:mt-20 mb-1 lg:mb-3 2xl:text-6xl">INCLA </h1>
+            <h1 className="text-4xl lg:text-5xl mt-10 lg:mt-20 mb-1 lg:mb-3 2xl:text-6xl">InCLA </h1>
             <p className="text-nowrap lg:text-xl 2xl:text-3xl">Education Management System</p>
             <div className="flex flex-col md:flex-row gap-7 md:gap-10 mt-24 md:mt-16">
-              <a href="https://portal.incla.edu.ng/staff/login" target="_blank" rel="noopener noreferrer">
+              <a href="https://portal.InCLA.edu.ng/staff/login" target="_blank" rel="noopener noreferrer">
                 <PrimaryButton className={'bg-white border-2 border-white w-full hover:bg-zinc-100 hover:scale-95'} textClass={'!text-black text-xs lg:text-sm 2xl:text-lg text-nowrap'}>LECTURER LOGIN</PrimaryButton>
               </a>
-              <a href="https://portal.incla.edu.ng/students/login" target="_blank" rel="noopener noreferrer">
-                <PrimaryButton className={'bg-transparent border-2 border-white w-full hover:bg-incla-purple hover:scale-95'} textClass={'text-xs lg:text-sm 2xl:text-lg text-nowrap'}>STUDENT LOGIN</PrimaryButton>
+              <a href="https://portal.InCLA.edu.ng/students/login" target="_blank" rel="noopener noreferrer">
+                <PrimaryButton className={'bg-transparent border-2 border-white w-full hover:bg-InCLA-purple hover:scale-95'} textClass={'text-xs lg:text-sm 2xl:text-lg text-nowrap'}>STUDENT LOGIN</PrimaryButton>
               </a>
             </div>
           </div>
@@ -41,7 +41,7 @@ const UserLogin = () => {
         </div>
         <div className="bg-white absolute bottom-0 left-0 w-screen">
           <div className="w-screen h-fit p-6 max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl mx-auto">
-            <a href="https://portal.incla.edu.ng/staff/login" target="_blank" rel="noopener noreferrer">
+            <a href="https://portal.InCLA.edu.ng/staff/login" target="_blank" rel="noopener noreferrer">
               <PrimaryButton className={'w-full md:w-fit hover:scale-95'} textClass={'text-xs lg:text-sm 2xl:text-lg'}>ADMIN LOGIN</PrimaryButton>
             </a>
           </div>

@@ -15,7 +15,7 @@ const robotoSlab = Roboto_Slab({
 
 export const metadata = {
   title: "Institute of Consecrated Life in Africa",
-  description: "INCLA",
+  description: "InCLA",
 };
 
 export default function RootLayout({ children}) {

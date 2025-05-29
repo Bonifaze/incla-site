@@ -1,4 +1,4 @@
-INCLA SITE DOCUMENTATION
+InCLA SITE DOCUMENTATION
 =======================
 
 Project Structure
