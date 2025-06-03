@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="flex items-center gap-5 mx-5">
           {/* Wrap button in <a> for external link */}
           <a
-            href="https://portal.incla.edu.ng/admissions/login"
+            href="https://portal.InCLA.edu.ng/admissions/login"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -6,7 +6,7 @@ export default function LM () {
             </div> 
             <div className="flex flex-col items-center bg-[#f2f2f2] p-5">
                 <div className="flex flex-col justify-center items-center max-w-[95%] gap-5">
-                    <div className="bg-incla-blue rounded-lg p-5 text-white w-full mt-5 lg:mt-10"
+                    <div className="bg-InCLA-blue rounded-lg p-5 text-white w-full mt-5 lg:mt-10"
                         style={{
                             boxShadow: "0px 4px 4px 0px #00000040",
                         }} 
@@ -72,7 +72,7 @@ export default function LM () {
                             </p>
                         </div>
                     </div>
-                    <div className="bg-incla-blue rounded-lg p-5 text-white w-full"
+                    <div className="bg-InCLA-blue rounded-lg p-5 text-white w-full"
                         style={{
                             boxShadow: "0px 4px 4px 0px #00000040",
                         }} 
@@ -90,7 +90,7 @@ export default function LM () {
                         <p>5. Youth Ministry: Models and Practices (2 Credit Units)</p><br />
                         </p>
                     </div>
-                    <div className="bg-incla-purple rounded-lg p-5 text-white w-full"
+                    <div className="bg-InCLA-purple rounded-lg p-5 text-white w-full"
                         style={{
                             boxShadow: "0px 4px 4px 0px #00000040",
                         }} 

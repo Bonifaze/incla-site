@@ -9,7 +9,7 @@ export default function AcademicPrograms () {
             <div className="bg-[#f2f2f2] flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center lg:max-w-[60%] max-w-[95%]">
                     {AcademicProgram.map((value, index) => (
-                        <div key={index} className={`flex flex-col w-full bg-incla-blue rounded-lg my-4 p-5 mt-5 lg:mt-10 text-white text-center ${index === 1 || index === AcademicProgram.length -1 ? 'bg-incla-purple' : '' || index === 3 ? 'bg-white !text-black' : ''}`}
+                        <div key={index} className={`flex flex-col w-full bg-InCLA-blue rounded-lg my-4 p-5 mt-5 lg:mt-10 text-white text-center ${index === 1 || index === AcademicProgram.length -1 ? 'bg-InCLA-purple' : '' || index === 3 ? 'bg-white !text-black' : ''}`}
                             style={{
                                 boxShadow: "0px 4px 4px 0px #00000040",
                             }} 

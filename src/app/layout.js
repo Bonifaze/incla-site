@@ -1,16 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
 import "./globals.css"; 
 import HeaderFooterToggle from "@/components/headerFooter";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 const robotoSlab = Roboto_Slab({
@@ -20,7 +15,7 @@ const robotoSlab = Roboto_Slab({
 
 export const metadata = {
   title: "Institute of Consecrated Life in Africa",
-  description: "INCLA",
+  description: "InCLA",
 };
 
 export default function RootLayout({ children}) {
@@ -33,7 +28,7 @@ export default function RootLayout({ children}) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${robotoSlab.className} antialiased`}>
+      <body className={`${inter.variable} ${robotoSlab.className} antialiased`}>
         <HeaderFooterToggle>{children}</HeaderFooterToggle>
       </body>
     </html>

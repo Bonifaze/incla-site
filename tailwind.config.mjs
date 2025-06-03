@@ -11,19 +11,19 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "incla-black": {
+        "InCLA-black": {
           100: "#0D0D0D",
         },
-        "incla-purple": {
+        "InCLA-purple": {
           DEFAULT: "#66165A",
         },
-        "incla-grey": {
+        "InCLA-grey": {
           200: "#D1d1d1",
         },
-        "incla-brown": {
+        "InCLA-brown": {
           DEFAULT: "#EBCF81",
         },
-        "incla-blue": {
+        "InCLA-blue": {
           DEFAULT: "#30ADE5",
         },
       },

@@ -9,7 +9,7 @@ export default  function retreatServices () {
                     style={{
                         boxShadow: "0px 4px 4px 0px #00000040",
                     }} 
-                    className="w-full h-[10%] bg-incla-purple rounded-lg md:p-5 lg:p-14 max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl mx-auto text-white"
+                    className="w-full h-[10%] bg-InCLA-purple rounded-lg md:p-5 lg:p-14 max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl mx-auto text-white"
                 >
                     <div className="flex flex-col justify-center p-5">
                         <h1 className="mb-4 text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-center">Retreat Services</h1>
