@@ -1,13 +1,20 @@
 const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');
+const path = require('path');
 
-const port = parseInt(process.env.PORT || '3000', 10);
+// cPanel Node.js environment configuration
+const port = parseInt(process.env.PORT || process.env.NODEJS_PORT || '3000', 10);
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = process.env.HOSTNAME || 'localhost';
+const hostname = process.env.HOSTNAME || '0.0.0.0'; // Use 0.0.0.0 for cPanel
+
+// Set the correct directory for cPanel
+const dir = process.cwd();
+console.log('Current working directory:', dir);
+console.log('Environment:', process.env.NODE_ENV);
 
 // Initialize Next.js app
-const app = next({ dev, hostname, port });
+const app = next({ dev, dir });
 const handle = app.getRequestHandler();
 
 let server;
