@@ -13,30 +13,52 @@ const images = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState(new Set([0])); // Start with first image loaded
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % images.length;
+        // Preload next image
+        setLoadedImages(prev => new Set([...prev, nextIndex]));
+        return nextIndex;
+      });
     }, 6000);
 
     return () => clearInterval(interval);
   }, []);
 
+  // Preload the next image when current changes
+  useEffect(() => {
+    const nextIndex = (currentIndex + 1) % images.length;
+    setLoadedImages(prev => new Set([...prev, nextIndex]));
+  }, [currentIndex]);
+
   return (
     <div
       className={`h-[700px] w-full bg-no-repeat relative bg-center flex items-center justify-center`}
     >
-      {images.map((src, i) => (
-        <Image
-          key={i}
-          src={src}
-          alt={`slide ${i}`}
-          layout="fill"
-          objectFit="cover"
-          className={`absolute inset-0 transition-opacity duration-1000 ${i === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-          priority={i === 0}
-        />
-      ))}
+      {images.map((src, i) => {
+        // Only render images that should be loaded
+        if (!loadedImages.has(i) && Math.abs(i - currentIndex) > 1) {
+          return null;
+        }
+        
+        return (
+          <Image
+            key={i}
+            src={src}
+            alt={`Institute of Consecrated Life in Africa - Slide ${i + 1}`}
+            fill
+            sizes="100vw"
+            className={`absolute inset-0 transition-opacity duration-1000 ${i === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+            priority={i === 0}
+            quality={85}
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          />
+        );
+      })}
       <div className="absolute inset-0 bg-[#A041915C] bg-opacity-40"></div>
       <div className="relative flex flex-col items-center gap-5 md:gap-20 mt-10 md:mt-16 max-w-screen max-sm:max-w-[640px] max-md:max-w-3xl max-lg:max-w-5xl max-xl:max-w-7xl max-2xl:max-w-screen-2xl mx-auto">
         <h4 className="text-2xl md:text-3xl 2xl:text-4xl text-center font-medium text-white">
