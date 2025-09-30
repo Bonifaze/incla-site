@@ -1,0 +1,42 @@
+[build]
+  publish = "out"
+  command = "npm run build && npm run export"
+
+[build.environment]
+  NODE_ENV = "production"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "origin-when-cross-origin"
+    X-XSS-Protection = "1; mode=block"
+
+[functions]
+  directory = "netlify/functions"
+
+# Form handling (if needed)
+# [forms]
+#   settings = { spam_protection = true }
+
+# Edge functions (if needed)
+# [[edge_functions]]
+#   function = "hello"
+#   path = "/api/hello"

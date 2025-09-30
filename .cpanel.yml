@@ -1,0 +1,28 @@
+---
+deployment:
+  tasks:
+    # Install Node.js dependencies
+    - export DEPLOYPATH=/home/inclaedu/public_html
+    - /bin/cp -R * $DEPLOYPATH
+    
+    # Navigate to deployment directory
+    - cd $DEPLOYPATH
+    
+    # Install dependencies (if Node.js is available)
+    - npm install --production
+    
+    # Build the Next.js application
+    - npm run build
+    
+    # Export static files for cPanel hosting
+    - npm run export
+    
+    # Move static files to public_html
+    - /bin/cp -R out/* $DEPLOYPATH/
+    
+    # Set proper permissions
+    - find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;
+    
+    # Clean up build artifacts
+    - rm -rf node_modules .next out package*.json

@@ -4,18 +4,55 @@ const next = require('next');
 
 const port = parseInt(process.env.PORT || '3000', 10);
 const dev = process.env.NODE_ENV !== 'production';
-const app = next({ dev });
+const hostname = process.env.HOSTNAME || 'localhost';
+
+// Initialize Next.js app
+const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
+
+let server;
 
 app.prepare().then(() => {
     const requestHandler = (req, res) => {
-        const parsedUrl = parse(req.url || '/', true);
-        handle(req, res, parsedUrl);
+        try {
+            const parsedUrl = parse(req.url || '/', true);
+            handle(req, res, parsedUrl);
+        } catch (err) {
+            console.error('Error handling request:', err);
+            res.statusCode = 500;
+            res.end('Internal Server Error');
+        }
     };
 
-    createServer(requestHandler).listen(port);
+    server = createServer(requestHandler);
+    
+    server.listen(port, hostname, () => {
+        console.log(`> Ready on http://${hostname}:${port}`);
+        console.log(`> Environment: ${process.env.NODE_ENV || 'development'}`);
+    });
+
+    server.on('error', (err) => {
+        console.error('Server error:', err);
+    });
 
 }).catch((err) => {
     console.error('Error starting server:', err);
     process.exit(1);
+});
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+    console.log('SIGTERM received, shutting down gracefully');
+    server.close(() => {
+        console.log('Process terminated');
+        process.exit(0);
+    });
+});
+
+process.on('SIGINT', () => {
+    console.log('SIGINT received, shutting down gracefully');
+    server.close(() => {
+        console.log('Process terminated');
+        process.exit(0);
+    });
 });

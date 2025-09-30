@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "start:prod": "cross-env NODE_ENV=production PORT=3000 node server.js",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true npm run build",
-    "optimize-images": "node scripts/optimize-images.js"
+    "optimize-images": "node scripts/optimize-images.js",
+    "build:docker": "docker build -t incla-website .",
+    "start:docker": "docker run -p 3000:3000 incla-website",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.1",
